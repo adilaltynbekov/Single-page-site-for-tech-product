@@ -1,0 +1,267 @@
+:root {
+  /* --primary: hsl(356, 62%, 42%); */
+  --primary: #cf303b;
+  --red-800: #912229;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --grey-500: #e6e6e6;
+  --blue: #03045e;
+  --blue-tint-500: #35367e;
+  --blue-tint-400: #6f71c3;
+  --blue-tint-100: #e6e6ef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* GENERAL */
+.container {
+  padding: 0 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding: 1rem 3rem;
+  background-color: var(--grey);
+}
+
+.navbar__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo-container a {
+  height: 100%;
+}
+
+.navbar__logo {
+  max-height: 100%;
+  max-width: auto;
+}
+
+.navbar__links-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar__link:link,
+.navbar__link:visited {
+  font-size: 1rem;
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+  color: var(--blue-tint-400);
+}
+
+.navbar__cta-list-item {
+}
+
+.navbar__cta-list-item a:link,
+.navbar__cta-list-item a:visited {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.navbar__cta-list-item a:hover,
+.navbar__cta-list-item a:active {
+  background-color: var(--red-800);
+}
+
+/* HERO SECTION */
+.hero-section {
+  padding: 3rem 0 3rem;
+  border-bottom: 1px solid var(--grey-500);
+}
+
+.hero-section__hero {
+  max-width: 80rem;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-section__text-box {
+  flex: 1;
+}
+
+.hero-section__heading-primary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--blue);
+}
+
+.hero-section__text {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--blue-tint-500);
+  margin-bottom: 1rem;
+}
+
+.hero-section__price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.hero-section__price span {
+  font-size: 1.5rem;
+}
+
+.hero-section__image-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-sectin__image {
+  max-height: 100%;
+}
+
+/* FEATURES SECTION */
+.features-section {
+  padding: 3rem 0 6rem;
+  border-bottom: 1px solid var(--grey-500);
+}
+
+.features-section__heading-secondary {
+  margin-bottom: 3rem;
+  color: var(--primary);
+}
+
+.features-section__features {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.features-section__feature {
+  /* background-color: var(--grey-500); */
+  max-width: 15.5rem;
+  padding: 2rem;
+  border-radius: 11px;
+  box-shadow: 0.8rem 0.8rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.features-section__feature-heading {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--blue);
+}
+
+.features-section__feature-text {
+  line-height: 1.4;
+  color: var(--blue-tint-500);
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding: 3rem 0 6rem;
+}
+
+.cta-section__cta {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-section__heading-secondary {
+  margin-bottom: 3rem;
+  color: var(--primary);
+}
+
+.cta-section__form {
+  border: 1px solid var(--blue-tint-500);
+  max-width: 30rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue-tint-100);
+}
+
+.cta-section__form div {
+  width: 100%;
+}
+
+.cta-section__form div label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.cta-section__form div input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  /* background-color: var(--blue-tint-100); */
+  border: none;
+  border-radius: 7px;
+  border: 1px solid var(--blue-tint-500);
+}
+
+.cta-section__form div textarea {
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 50%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 7px;
+  border: 1px solid var(--blue-tint-500);
+}
+
+.cta-section__form-btn {
+  padding: 1rem 3rem;
+  background-color: var(--primary);
+  border-radius: 7px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.cta-section__form-btn:hover {
+  background-color: var(--red-800);
+}
