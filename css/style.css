@@ -42,26 +42,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 4.5rem;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   background-color: var(--grey);
 }
 
 .navbar__logo-container {
-  display: flex;
-  align-items: center;
-}
-
-.navbar__logo-container a {
   height: 100%;
 }
 
 .navbar__logo {
   max-height: 100%;
-  max-width: auto;
 }
 
 .navbar__links-list {
@@ -100,6 +96,25 @@ body {
   background-color: var(--red-800);
 }
 
+.navbar__mobile-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.navbar__menu-icon {
+  height: 3rem;
+  width: 3rem;
+
+  color: var(--blue);
+}
+
+.navbar__menu-icon[name="close-outline"] {
+  display: none;
+}
+
 /* HERO SECTION */
 .hero-section {
   padding: 3rem 0 3rem;
@@ -131,7 +146,7 @@ body {
   font-size: 1rem;
   line-height: 1.4;
   color: var(--blue-tint-500);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .hero-section__price {
@@ -151,8 +166,8 @@ body {
   justify-content: center;
 }
 
-.hero-sectin__image {
-  max-height: 100%;
+.hero-section__image {
+  max-width: 100%;
 }
 
 /* FEATURES SECTION */

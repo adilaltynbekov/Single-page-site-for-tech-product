@@ -6,6 +6,7 @@
     <title>Smart Toaster | Web-site</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,20 +28,26 @@
             />
           </a>
         </div>
-        <ul class="navbar__links-list">
-          <li class="navbar__list-item">
-            <a href="#" class="navbar__link">Home</a>
-          </li>
-          <li class="navbar__list-item">
-            <a href="#" class="navbar__link">Products</a>
-          </li>
-          <li class="navbar__list-item">
-            <a href="#features-section" class="navbar__link">Learn more</a>
-          </li>
-          <li class="navbar__list-item navbar__cta-list-item">
-            <a href="#cta-section" class="navbar__link">Contact us </a>
-          </li>
-        </ul>
+        <div class="navbar__main-nav">
+          <ul class="navbar__links-list">
+            <li class="navbar__list-item">
+              <a href="#" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#" class="navbar__link">Products</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#features-section" class="navbar__link">Learn more</a>
+            </li>
+            <li class="navbar__list-item navbar__cta-list-item">
+              <a href="#cta-section" class="navbar__link">Contact us </a>
+            </li>
+          </ul>
+        </div>
+        <button class="navbar__mobile-btn">
+          <ion-icon class="navbar__menu-icon" name="menu-outline"></ion-icon>
+          <ion-icon class="navbar__menu-icon" name="close-outline"></ion-icon>
+        </button>
       </div>
     </header>
     <main>
@@ -99,45 +106,51 @@
       </section>
       <!-- CTA SECTION -->
       <section id="cta-section" class="cta-section">
-        <div class="container">
-          <div class="container">
-            <h2 class="cta-section__heading-secondary">Contact us</h2>
-          </div>
+        <div class="text-center container">
+          <h2 class="cta-section__heading-secondary">Contact us</h2>
+        </div>
 
-          <div class="cta-section__cta container">
-            <form class="cta-section__form">
-              <div>
-                <label for="name">Name</label>
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Adil Altynbekov"
-                  name="name"
-                  required
-                />
-              </div>
+        <div class="cta-section__cta container">
+          <form class="cta-section__form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Adil Altynbekov"
+                name="name"
+                required
+              />
+            </div>
 
-              <div>
-                <label for="email-address">Email address</label>
-                <input
-                  id="email-address"
-                  type="email"
-                  placeholder="smart@toaster.com"
-                  name="email-address"
-                  required
-                />
-              </div>
+            <div>
+              <label for="email-address">Email address</label>
+              <input
+                id="email-address"
+                type="email"
+                placeholder="smart@toaster.com"
+                name="email-address"
+                required
+              />
+            </div>
 
-              <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="3"></textarea>
-              </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="3"></textarea>
+            </div>
 
-              <button class="cta-section__form-btn">Send Message</button>
-            </form>
-          </div>
+            <button class="cta-section__form-btn">Send Message</button>
+          </form>
         </div>
       </section>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
